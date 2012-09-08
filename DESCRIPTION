@@ -1,0 +1,10 @@
+Package: RYAML
+Version: 0.1-0
+Title: Read and write YAML
+Description: Functionality for importing and exporting
+ data using YAML.
+Author: Duncan Temple Lang <duncan@r-project.org>
+Maintainer: Duncan Temple Lang <duncan@r-project.org>
+License: GPL2
+
+

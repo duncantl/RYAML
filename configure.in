@@ -1,0 +1,19 @@
+AC_INIT(src/read.c)
+
+AC_PATH_PROG(PKG_CONFIG, pkg-config)
+
+echo "PKG_CONFIG = $PKG_CONFIG"
+
+if test -n "$PKG_CONFIG" ; then
+echo "Getting yaml flags"
+   YAML_CFLAGS=`${PKG_CONFIG} --cflags yaml-0.1`
+   YAML_LIBS=`${PKG_CONFIG} --libs yaml-0.1`
+fi
+
+AC_SUBST(YAML_CFLAGS)
+AC_SUBST(YAML_LIBS)
+
+echo "$YAML_LIBS"
+
+AC_OUTPUT(src/Makevars)
+

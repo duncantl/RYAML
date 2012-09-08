@@ -1,0 +1,5 @@
+useDynLib(RYAML)
+
+export(fromYAML)
+exportMethods(fromYAML)
+
